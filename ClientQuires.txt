@@ -1,0 +1,88 @@
+query getAllUsers{ 
+  users{
+    id,
+    fname,
+    email,
+    fname,
+    password
+  }
+}
+query getAllQoutes {
+  qoutes{
+    id,
+    name
+}
+}
+
+query getAllBooks{
+  books{
+    author,
+    title
+  }
+}
+
+query getAllUsers{ 
+  users{
+    id,
+    fname,
+    email,
+    fname,
+    password,
+ qoutes{
+      name
+      id
+    }
+  }
+}
+
+get Single User By id 
+
+    query getSingleUser{
+  user(id:"11122"){
+    lname,
+    fname,
+    email,
+    password,
+    id
+  }
+}
+get Qoutes By id 
+query getQoutesBYId{
+  iqoute(id:"11122"){
+    name,
+    id
+  }
+    
+  }
+
+using Query Variables in GraphQL 
+
+query getQoutesBYId($user_id:ID){
+  iqoute(id:$user_id){
+    name,
+    id
+  }
+  }
+
+  mutation update($UserId:UserId!){
+  updateUser(UserId:$UserId){
+    firstName,
+    email,
+    lastName,
+    password
+  }
+}
+
+mutation signUpUser($user_new:UserInput!){
+  signupUser(userNew:$user_new){
+    email,
+    password,
+    lastName,
+    firstName
+  }
+
+mutation signInUsers($userSignin:UserSigninInput!){
+  usrer:signinUser(userSignin:$userSignin){
+   token 
+  }
+}
