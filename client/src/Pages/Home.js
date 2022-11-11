@@ -49,14 +49,7 @@ const Home = () => {
   });
 
   const { loading, error, data, stopPolling, networkStatus, startPolling } =
-    useQuery(GET_ALL_QUOTES, {
-        // pollInterval: 500,
-      // fetchPolicy: "network-only",
-      // onCompleted: () => console.log("called"),
-      // fetchPolicy: "no-cache",
-      // stopPolling(){
-      // }
-    });
+    useQuery(GET_ALL_QUOTES, {});
 
   const navigate = useNavigate();
   React.useEffect(() => {
