@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+ ### Step To Run the Application 
+ 1.Go inside the client directory 
+ 2.run command `yarn start` to start the application development mode 
+ 3.in main directory run GraphQL And run `nodemon server ` to start server 
